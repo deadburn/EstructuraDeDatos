@@ -10,9 +10,10 @@ class Lista_numeros:
         self.lista_numero.extend(dato_numero)
         print(self.lista_numero)
         
-    def insertar_dato(self,posicion, dato_numero):
-        self.lista_numero.insert(2,5)
-        print(dato_numero + [self.lista_numero])
+    def insertar_dato(self,posicion):
+        sublist=['8','9']
+        self.lista_numero.insert(posicion, sublist)
+        print(self.lista_numero)
     
     def eliminar_dato(self):
         pass
