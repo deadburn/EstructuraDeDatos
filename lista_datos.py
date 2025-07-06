@@ -14,10 +14,19 @@ class Lista_numeros:
         sublist=['8','9']
         self.lista_numero.insert(posicion, sublist)
         print(self.lista_numero)
+        return sublist
     
-    def eliminar_dato(self):
-        pass
+    def eliminar_dato(self, posicion):
+       elemento_eliminado= self.lista_numero.pop(posicion)
+       print(f"La lista {self.lista_numero} ha sido actualizada")
+       print(f"El elemento {elemento_eliminado} ha sido eliminado")
+       return elemento_eliminado
     
-    def ver_Numero(self):
-        pass
+    def ver_Numero(self, posicion):
+        elemento = self.lista_numero[posicion]
+        print(f"Elemento en posición {posicion}: {elemento}")
+        return elemento
+    
+    
+        
     
