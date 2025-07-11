@@ -10,11 +10,10 @@ class Lista_numeros:
         self.lista_numero.extend(dato_numero)
         print(self.lista_numero)
         
-    def insertar_dato(self,posicion):
-        sublist=['8','9']
-        self.lista_numero.insert(posicion, sublist)
+    def insertar_dato(self,posicion, dato_numero):
+        self.lista_numero.insert(posicion, dato_numero)
         print(self.lista_numero)
-        return sublist
+
     
     def eliminar_dato(self, posicion):
        elemento_eliminado= self.lista_numero.pop(posicion)
@@ -22,10 +21,11 @@ class Lista_numeros:
        print(f"El elemento {elemento_eliminado} ha sido eliminado")
        return elemento_eliminado
     
-    def ver_Numero(self, posicion):
-        elemento = self.lista_numero[posicion]
-        print(f"Elemento en posición {posicion}: {elemento}")
-        return elemento
+    def buscarPorIndice(self, sublista):
+        indice=self.lista_numero.index(sublista)
+        return indice
+        
+        
     
     
         
